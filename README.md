@@ -1,15 +1,16 @@
-# Črkolandija
+# Črkolandija 2
 
-Preprosta slovenska spletna aplikacija za otroke približno od 4 do 7 let. Vsebuje slovensko abecedo, igro začetnih črk, risanje s prstom ali miško, povezovanje besed s slikami in sestavljanje kratkih besed. Prilagojena telefonu, tablici in računalniku. Brez namestitve, prijave, oglasov in zunanjih knjižnic.
+[Odpri aplikacijo](https://dkooo.github.io/crkolandija/)
 
-## Objava na GitHub Pages
+Slovenska aplikacija za otroke: tri velike slikovne izbire in ena naloga na zaslonu. Prilagojena telefonu, iPadu, tablici in računalniku.
 
-1. Ustvari repozitorij `crkolandija` in vanj dodaj vse datoteke iz te mape (index.html mora biti v korenu).
-2. V Settings → Pages izberi Deploy from a branch, vejo `main`, mapo `/ (root)` in Save.
-3. Po uspešni objavi je stran na `https://UPORABNISKO-IME.github.io/crkolandija/`.
+- **Črke:** povezovanje enake črke in slikovni primer.
+- **Pišem:** vodene oštevilčene poteze velikih tiskanih črk, rumena začetna pika, animiran namig. V nastavitvah za starše preklop na pisanje kratkih besed, črko za črko.
+- **Berem:** izbira slike, nato sestavljanje besede z označeno naslednjo črko. Nastavitev za začetnike ali bralce.
+- Melodije ob uspehu, nežna zvočna povratna informacija ob ponovnem poskusu, velika zvezdica in en gumb za nadaljevanje.
+- Zvoki so ustvarjeni na napravi z Web Audio po prvem dotiku. Govorna navodila potrebujejo nameščen slovenski sistemski glas. Sistemska govorna storitev lahko uporablja omrežje.
+- Napredek ostane v localStorage in se ohrani iz prve različice. Brez analitike, prijav in oglasov.
 
-Za lokalno uporabo odpri `index.html`. Za razvoj lahko zaženeš `python3 -m http.server 8000`.
+Pisanje preverja približno sledenje geometrijski vodilni črti v zaporedju potez, ne prepoznava poljubne rokopisne pisave in ni strokovna ocena. Vaje uporabljajo velike tiskane črke. Besede se pišejo po eno črko naenkrat, primerno majhnim zaslonom.
 
-## Opombe
-
-Zvezdice in obiskane črke se shranjujejo v localStorage tega brskalnika. Brez strežnika in zbiranja osebnih podatkov. Če je shranjevanje onemogočeno, aplikacija deluje brez trajnega napredka. Pisanje je prosto sledenje tiskani črki in ne predstavlja avtomatskega preverjanja pisave. Govor je na voljo le, če ima naprava slovenski sistemski glas; sistemska govorna storitev lahko uporabi omrežje. Otroku pri učenju pomaga odrasli. Pomen slik je lahko zaradi prikaza emojijev med napravami nekoliko drugačen.
+Datoteke so statične, brez odvisnosti. Za razvoj odpri `index.html` ali zaženi `python3 -m http.server 8000`. GitHub Pages objavlja vejo `main`, korensko mapo. Različica 1 ostaja v zgodovini repozitorija.
